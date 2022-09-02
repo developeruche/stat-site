@@ -1,9 +1,26 @@
+/* Importing styles  */
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@300;400;500;600&family=Montserrat+Alternates:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* font-family: 'Anek Telugu', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif; */
+
+/* 
+Importing the styles 
+@import "./config.css";
+@import "./components/jumbotron.css";
+*/
+@import "./main/layout.css";
+@import "./main/dashboard.css";
+@import "./main/modal.css";
+
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgb(19, 19, 22);
 }
 
 a {
@@ -15,12 +32,13 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgb(12, 12, 15);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(28, 28, 34);
+  border-radius: 8px;
 }
