@@ -36,7 +36,7 @@ function Center({stable, crypto, transaction, bal}: Props) {
                 {
                     stable && stable.map((token: any, index: number) => {
                         return(
-                            <div className="center__display__stable__item">
+                            <div className="center__display__stable__item" key={index}>
                                 <img src={token.logo_url} alt={token.contract_ticker_symbol} />
                                 <p>${Number(token.quote).toFixed(2)}</p>
                             </div>
@@ -50,7 +50,7 @@ function Center({stable, crypto, transaction, bal}: Props) {
                 {
                     crypto && crypto.map((token: any, index: number) => {
                         return(
-                            <div className="center__display__crypto__item">
+                            <div className="center__display__crypto__item" key={index}>
                                 <img src={token.logo_url} alt={token.contract_ticker_symbol} />
                                 <p>${Number(token.quote).toFixed(2)}</p>
                             </div>
@@ -69,7 +69,7 @@ function Center({stable, crypto, transaction, bal}: Props) {
             {
                 transaction && transaction.map((trans: any, index: number) => {
                     return (
-                        <div className="center__last__transaction__item">
+                        <div className="center__last__transaction__item" key={index}>
                             <div className="center__last__transaction__item__image__wrapper">
                             <p>{trans.from_address.substring(0,6)}...{trans.from_address.slice(-4)}</p>
                             </div>
